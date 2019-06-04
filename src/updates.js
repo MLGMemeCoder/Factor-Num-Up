@@ -22,7 +22,7 @@ function gameTick() {
 	}
 	if (player.prime.gameBreak.upgrades.includes(5)) updatePrimeDivision()
 	else if (usedFuelWithExtras[2]+usedFuelWithExtras[5]>0) updateBoosts()
-	numberPerSecond=factors[0]*factors[1]*factors[2]*factors[3]*factors[4]*factors[5]*factors[6]*primeFactor*boostFactors[0]*virtual.bugFactor*challengeFactor
+	numberPerSecond=factors[0]*factors[1]*factors[2]*factors[3]*factors[4]*factors[5]*factors[6]*primeFactor*boostFactors[0]*bugFactor*challengeFactor
 	player.number+=numberPerSecond*delta
 	player.statistics.totalNumber+=numberPerSecond*delta
 	
